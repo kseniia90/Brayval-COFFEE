@@ -1,0 +1,1067 @@
+<style type="text/css">.layout-aside,
+    .breadcrumbs,
+    .main-h,
+    .heading.heading--xl {
+        display: none;
+    }
+
+    .header {
+        margin-bottom: 0;
+    }
+
+    .layout {
+        margin-bottom: 0;
+    }
+
+    .wrapper, .layout-wrap {
+        max-width:  none !important;
+        padding: 0 !important;
+    }
+
+    :root {
+        --white: #FFFFFF;
+        --black: #000000;
+        --yellow: #FCB520;
+    }
+
+
+    .container-hruba {
+        min-height: 100%;
+        max-width: 1370px; /*1340*/
+        padding: 0 15px;
+        margin: 0 auto;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .container-hruba * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container-hruba p,
+    h2,
+    h3,
+    h4 {
+        margin: 0 !important;
+    }
+
+    .container-hruba ul,
+    .container-hruba ol {
+        list-style: none;
+    }
+
+    .margin-bottom-hruba {
+        margin-bottom: 80px;
+    }
+
+    .hruba-title {
+        font-size: 80px !important;
+        line-height: normal;
+        font-weight: 800;
+        text-align: center;
+    }
+
+    .hruba-subtitle {
+        font-size: 20px !important;
+        line-height: normal;
+        font-weight: 600;
+        text-align: center;
+        margin: 0 auto 20px !important;
+    }
+
+    .hruba__button {
+        box-sizing: border-box;
+        display: inline-block;
+        border-radius: 5px;
+        padding: 12px 30px !important;
+        text-decoration: none !important;
+        font-size: 18px !important;
+        font-weight: 600 !important;
+        letter-spacing: 0.02em;
+        text-align: center;
+        transition: all 0.3s ease !important;
+        color: var(--white) !important;
+        background-color: var(--yellow);
+        cursor: pointer;
+    }
+
+    .hruba__button:hover {
+        background-color: #ffc832 !important;
+    }
+
+    /* banner start  */
+
+    .banner-hruba {
+        color: var(--white);
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.5)), url(/content/uploads/images/banner_hruba.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 50px;
+        height: 745px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .banner-hruba__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner-hruba__title {
+        margin: 0 0 20px 0 !important;
+    }
+
+    .banner-hruba__list {
+        font-size: 18px;
+        margin-bottom: 50px !important;
+        font-weight: 400;
+        letter-spacing: 0.02em;
+        text-align: center;
+        line-height: normal;
+        list-style: none;
+    }
+
+    .banner-hruba__list li {
+        display: inline;
+        position: relative;
+        padding: 0px 0px 0px 31px !important;
+        white-space: nowrap;
+        text-align: left;
+    }
+
+    .banner-hruba__list li:not(:last-child) {
+        margin-right: 15px;
+    }
+
+    .banner-hruba__list li::before {
+        display: block;
+        position: absolute;
+        left: 0px;
+        top: 2px;
+        content: "" !important;
+        width: 16px;
+        height: 16px;
+        background: url(/content/uploads/images/fire.svg);
+        background-repeat: no-repeat;
+        background-position: center right;
+    }
+
+    .banner-hruba__list li:last-child {
+        padding: 0px 31px 0px 31px !important;
+    }
+
+    .banner-hruba__list li:last-child::after {
+        display: block;
+        position: absolute;
+        right: 0px;
+        top: 2px;
+        content: "" !important;
+        width: 16px;
+        height: 16px;
+        background: url(/content/uploads/images/fire.svg);
+        background-repeat: no-repeat;
+        background-position: center right;
+    }
+
+    /* banner end  */
+
+    /* our-works start  */
+
+    .our-works {
+        text-align: center;
+    }
+
+    .our-works-carousel {
+        max-height: 452px;
+    }
+
+    .our-works__slider,
+    .services-hruba__slider,
+    .reviews-hruba__slider {
+        position: relative;
+    }
+
+    .our-works__slider__item {
+        height: 100%;
+        width: 100%;
+        max-width: 313px;
+    }
+
+    .our-works__slider__item-img-block {
+        height: 100%;
+        border-radius: 6px;
+        overflow: hidden;
+    }
+
+    .our-works__slider__item-img-block img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 6px;
+    }
+
+    /* our-works end */
+
+    /*swiper start */
+
+    .container-hruba .slider-screen {
+        margin: -20px !important;
+        padding: 20px !important;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .container-hruba .swiper-slide {
+        height: auto !important;
+    }
+
+    .container-hruba .slider-screen::after {
+        content: '';
+        display: block;
+        height: 100%;
+        width: 19px;
+        background-color: white;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 5;
+    }
+
+    .container-hruba .slider-screen::before {
+        content: '';
+        display: block;
+        height: 100%;
+        width: 19px;
+        background-color: white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 5;
+    }
+
+    .container-hruba .swiper-button {
+        box-sizing: border-box;
+        height: 38px !important;
+        width: 38px !important;
+        position: absolute;
+        z-index: 60;
+        top: 50%;
+        transform: translate(0, -50%);
+        border: 1px solid var(--yellow);
+        background-color: var(--white);
+        border-radius: 3px;
+        cursor: pointer;
+        transition: all 0.3s ease !important;
+    }
+
+    .container-hruba .swiper-button::after {
+        font-size: 18px !important;
+        font-weight: 800 !important;
+        color: var(--yellow) !important;
+    }
+
+    .container-hruba .swiper-button-next {
+        right: -19px !important;
+        background: url(/content/uploads/images/arrow-next.svg), #ffffff;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .container-hruba .swiper-button-prev {
+        left: -19px !important;
+        background: url(/content/uploads/images/arrow-prev.svg), #ffffff;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .container-hruba .swiper-scrollbar {
+        display: none;
+        position: static !important;
+        margin-top: 10px !important;
+    }
+
+    .container-hruba .swiper-scrollbar {
+        border-radius: var(--swiper-scrollbar-border-radius, 10px);
+        position: relative;
+        touch-action: none;
+        background: transparent;
+    }
+
+    .container-hruba .swiper-scrollbar-disabled>.swiper-scrollbar,
+    .container-hruba .swiper-scrollbar.swiper-scrollbar-disabled {
+        display: none !important
+    }
+
+    .container-hruba .swiper-horizontal>.swiper-scrollbar,
+    .container-hruba .swiper-scrollbar.swiper-scrollbar-horizontal {
+        position: absolute;
+        left: var(--swiper-scrollbar-sides-offset, 1%);
+        bottom: var(--swiper-scrollbar-bottom, 4px);
+        top: var(--swiper-scrollbar-top, auto);
+        z-index: 50;
+        height: var(--swiper-scrollbar-size, 4px);
+        width: calc(100% - 2 * var(--swiper-scrollbar-sides-offset, 1%))
+    }
+
+    .container-hruba .swiper-scrollbar.swiper-scrollbar-vertical,
+    .container-hruba .swiper-vertical>.swiper-scrollbar {
+        position: absolute;
+        left: var(--swiper-scrollbar-left, auto);
+        right: var(--swiper-scrollbar-right, 4px);
+        top: var(--swiper-scrollbar-sides-offset, 1%);
+        z-index: 50;
+        width: var(--swiper-scrollbar-size, 4px);
+        height: calc(100% - 2 * var(--swiper-scrollbar-sides-offset, 1%))
+    }
+
+    .container-hruba .swiper-scrollbar-drag {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        background:  #D9D9D9;
+        border-radius: var(--swiper-scrollbar-border-radius, 10px);
+        left: 0;
+        top: 0;
+        color: transparent;
+    }
+
+    .container-hruba .swiper-scrollbar-cursor-drag {
+        cursor: move
+    }
+
+    .container-hruba .swiper-scrollbar-lock {
+        display: none
+    }
+
+    /*swiper end */
+
+    /* How to order start */
+
+    .order-hruba__steps-block {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        margin: 0 auto;
+        padding-left: 0 !important;
+    }
+
+    .order-hruba__step {
+        flex: 0 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        min-height: 192px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        background-color: #181818;
+        color: var(--white);
+        font-size: 16px;
+        font-weight: 300;
+        letter-spacing: 0.02em;
+        padding: 47px 18px;
+        text-align: center;
+        position: relative;
+        list-style: none;
+        counter-increment: my-awesome-counter;
+    }
+
+    .order-hruba__step ::before {
+        content: "0" counter(my-awesome-counter);
+        font-size: 70px;
+        font-weight: 600;
+        line-height: 85.33px;
+        text-align: center;
+        -webkit-text-stroke: 1px #FCB52033;
+        color: transparent;
+        position: absolute;
+        top: 15px;
+        left: 18px;
+    }
+
+    .order-hruba__step:not(:last-of-type):after {
+        content: "";
+        display: block;
+        width: 10px;
+        height: 18px;
+        background: url('/content/uploads/images/arrow-next.svg');
+        position: absolute;
+        top: 50%;
+        right: -20px;
+        transform: translateY(-50%);
+    }
+
+    .order-hruba__step h4 {
+        margin: 0 !important;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 21.94px;
+        text-align: center;
+        color: var(--yellow);
+    }
+
+    .order-hruba__step p {
+        margin: 0 !important;
+    }
+
+    /* How to order end */
+
+    /*Our services start*/
+
+    .services-hruba__slider__item {
+        flex: 1 0 auto;
+        align-self: stretch;
+        height: 100%;
+        width: 100%;
+        max-width: 313px;
+        display: flex !important;
+        flex-direction: column;
+        border: 1px solid #1818181A;
+        border-radius: 6px;
+        transition: all 0.3s ease;
+    }
+
+    .services-hruba__slider__item:hover {
+        border: 1px solid #fcb51f;
+        box-shadow: 0 7px 15px rgba(59, 55, 43, .25);
+    }
+
+    .services-hruba__slider__item img {
+        width: 100%;
+        height: 184px;
+        object-fit: cover;
+        border-radius: 6px;
+    }
+
+    .services-hruba__item__content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 19.5px;
+        letter-spacing: 0.02em;
+    }
+
+    .services-hruba__item__content h4 {
+        font-size: 17px;
+        font-weight: 600;
+        line-height: 20.72px;
+    }
+
+    .services-hruba__item__content p {
+        flex: 1 0 auto;
+    }
+
+    .services-hruba__item__content .hruba__button {
+        font-size: 14px !important;
+    }
+
+    /*Our services end*/
+
+    /*Reviews start*/
+
+    .reviews-hruba__slider__item {
+        height: 100%;
+        max-width: 427px;
+    }
+
+    .reviews-hruba__slider__item__content {
+        height: 100%;
+        min-width: 271px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 6px;
+        overflow: hidden;
+        border: 1px solid #1818181A;
+        padding: 20px;
+        box-sizing: border-box;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 19.5px;
+        letter-spacing: 0.02em;
+        transition: all 0.3s ease;
+    }
+
+    .reviews-hruba__slider__item:hover .reviews-hruba__slider__item__content {
+        border: 1px solid #fcb51f;
+        box-shadow: 0 7px 15px rgba(59, 55, 43, .25);
+    }
+
+    .reviews-hruba__slider__item__title {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .reviews-hruba__slider__item-stars {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    /*Reviews end*/
+
+    /* banner-bottom start  */
+
+    .banner-bottom-hruba {
+        color: var(--white);
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.09) 0%, #181818 100%), url(/content/uploads/images/banner-bottom_hruba.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+        padding: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+    }
+
+    .banner-bottom-hruba__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .banner-bottom-hruba__title {
+        font-size: 50px !important;
+        font-weight: 800;
+        line-height: 60.95px;
+    }
+
+    .banner-bottom-hruba__content p {
+        max-width: 705px;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 19.5px;
+        letter-spacing: 0.02em;
+    }
+
+    .banner-bottom-hruba::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 80px;
+        position: absolute;
+        bottom: 0;
+        background: linear-gradient(to bottom, transparent, #181818);
+    }
+
+    /* banner-bottom end  */
+
+    @media (max-width: 992px) {
+
+        .order-hruba__steps-block {
+            grid-template-columns: 1fr;
+        }
+
+        .order-hruba__step:not(:last-of-type):after {
+            top: calc(100% + 5px);
+            right: 50%;
+            transform: translateX(-50%);
+            transform: rotate(90deg);
+        }
+
+    }
+
+    @media (max-width: 768px) {
+
+        .wrapper {
+        padding: 0px 16px 0px;
+        }
+
+        .catalog__banners--top {
+            margin-top: 0px;
+        }
+
+        .catalog__banners {
+            margin: 0px 0;
+        }
+
+        .catalog__banners--bottom {
+            margin: 0;
+        }
+
+        .margin-bottom-hruba {
+            margin-bottom: 60px;
+        }
+
+        .hruba-title {
+            font-size: 50px !important;
+        }
+
+        .hruba__button {
+            font-size: 16px !important;
+        }
+
+        .banner-hruba {
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.5)), url(/content/uploads/images/banner_hruba-mob.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 15px;
+            height: 100vh;
+            margin-left:-16px;
+            margin-right: -16px;
+        }
+
+        .banner-hruba__list {
+            font-size: 14px;
+            margin-bottom: 30px !important;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .banner-hruba__list li {
+            display: inline;
+            position: relative;
+            padding: 0px 0px 0px 31px !important;
+            white-space: nowrap;
+            text-align: left;
+        }
+
+        .banner-hruba__list li:not(:last-child) {
+            margin-right: 0;
+        }
+
+        .our-works__slider__item {
+            max-width: 157px;
+            min-width: 156px;
+        }
+
+        .order-hruba__step {
+            padding: 30px 15px;
+        }
+
+        .order-hruba__step ::before {
+            top: 0px;
+        }
+
+        .services-hruba__slider__item {
+            max-width: 290px;
+        }
+
+        .services-hruba__slider__item img {
+            height: 170px;
+        }
+
+        .services-hruba__slider__item__content {
+            font-size: 14px;
+            line-height: 17px;
+        }
+
+        .services-hruba__slider__item__content h4 {
+            font-size: 16px;
+            line-height: 19.5px;
+        }
+
+        .reviews-hruba__slider__item {
+            max-width: 301px;
+            min-width: 300px;
+        }
+
+        .reviews-hruba__slider__item__content {
+            padding: 15px;
+            font-size: 14px;
+            line-height: 17.07px;
+        }
+
+        .banner-bottom-hruba {
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.09) 0%, #181818 100%), url(/content/uploads/images/banner-bottom_hruba-mob.png);
+            background-repeat: no-repeat;
+            background-position: top center;
+            background-size: cover;
+            padding: 60px 15px;
+            margin-left: -16px;
+            margin-right: -16px;
+        }
+
+        .banner-bottom-hruba__title {
+            font-size: 30px !important;
+            line-height: 36.57px;
+        }
+
+        .banner-bottom-hruba__content p {
+            font-size: 14px;
+            line-height: 17.07px;
+        }
+
+        .banner-bottom-hruba::after {
+            height: 60px;
+        }
+
+        .container-hruba .slider-screen {
+            margin: -15px !important;
+            padding: 15px !important;
+        }
+
+        .container-hruba .slider-screen::after {
+            display: none;
+        }
+
+        .container-hruba .slider-screen::before {
+            display: none;
+        }
+
+        .container-hruba .swiper-button {
+            display: none !important;
+        }
+
+        .container-hruba .swiper-scrollbar {
+            display: block;
+        }
+
+    }
+</style>
+<main>
+<div class="wrapper-hruba"><!-- Banner -->
+<section class="banner-hruba margin-bottom-hruba">
+<div class="banner-hruba__content container-hruba">
+<h1 class="banner-hruba__title hruba-title">Монтаж димоходу</h1>
+
+<ul class="banner-hruba__list">
+	<li class="banner-hruba__list-item">Монтаж за 1-2 робочі дні</li>
+	<li class="banner-hruba__list-item">Під ключ від 5000 грн</li>
+	<li class="banner-hruba__list-item">Гарантія</li>
+</ul>
+
+<div class="hruba__button"><span class="button-content">Замовити прорахунок</span></div>
+</div>
+</section>
+<!-- Our works -->
+
+<section class="our-works container-hruba margin-bottom-hruba">
+<h3 class="our-works__title hruba-subtitle">Приклади наших робіт</h3>
+
+<div class="slider-screen">
+<div class="our-works__slider">
+<div class="swiper-wrapper our-works-carousel">
+<div class="swiper-slide our-works__slider__item">
+<div class="our-works__slider__item-img-block"><img alt="our_works_img" loading="lazy" src="/content/uploads/images/our-works-1.png" /></div>
+</div>
+
+<div class="swiper-slide our-works__slider__item">
+<div class="our-works__slider__item-img-block"><img alt="our_works_img" loading="lazy" src="/content/uploads/images/our-works-2.png" /></div>
+</div>
+
+<div class="swiper-slide our-works__slider__item">
+<div class="our-works__slider__item-img-block"><img alt="our_works_img" loading="lazy" src="/content/uploads/images/our-works-3.png" /></div>
+</div>
+
+<div class="swiper-slide our-works__slider__item">
+<div class="our-works__slider__item-img-block"><img alt="our_works_img" loading="lazy" src="/content/uploads/images/our-works-4.png" /></div>
+</div>
+
+<div class="swiper-slide our-works__slider__item">
+<div class="our-works__slider__item-img-block"><img alt="our_works_img" loading="lazy" src="/content/uploads/images/our-works-5.png" /></div>
+</div>
+</div>
+
+<div class="swiper-button swiper-button-next">&nbsp;</div>
+
+<div class="swiper-button swiper-button-prev">&nbsp;</div>
+
+<div class="swiper-scrollbar">
+<div class="swiper-scrollbar-drag">.</div>
+</div>
+</div>
+</div>
+</section>
+<!-- How to order -->
+
+<section class="order-hruba container-hruba margin-bottom-hruba">
+<h3 class="hruba-subtitle">Як замовити?</h3>
+
+<ol class="order-hruba__steps-block">
+	<li class="order-hruba__step">
+	<h4>Заявка</h4>
+
+	<p>Ви залишаєте заявку на зворотній дзвінок або зв&#39;язуєтеся з нами за вказаним телефоном. Домовляєтеся про зустріч із замірником</p>
+	</li>
+	<li class="order-hruba__step">
+	<h4>Розрахунок вартості</h4>
+
+	<p>У цей же день після виміру або якщо вимір не потрібний, отримуєте фіксований кошторис на затвердження.</p>
+	</li>
+	<li class="order-hruba__step">
+	<h4>Виконання робіт</h4>
+
+	<p>У затверджений термін та за наявності необхідного матеріалу на об&#39;єкті, починаємо працювати.</p>
+	</li>
+	<li class="order-hruba__step">
+	<h4>Прийом роботи</h4>
+
+	<p>Ви приймаєте та оплачуєте вартість робіт</p>
+	</li>
+</ol>
+</section>
+<!-- Our services -->
+
+<section class="services-hruba container-hruba margin-bottom-hruba">
+<h3 class="hruba-subtitle">Наші послуги</h3>
+
+<div class="slider-screen">
+<div class="services-hruba__slider">
+<div class="swiper-wrapper services-hruba-carousel">
+<div class="swiper-slide services-hruba__slider__item"><img alt="services" loading="lazy" src="/content/uploads/images/services-1.png" />
+<div class="services-hruba__item__content">
+<h4>Монтаж та прорахунок</h4>
+
+<p>Допоможемо підібрати матеріали, що підходять саме вам, у оптимальному співвідношенні.</p>
+
+<div class="hruba__button"><span class="button-content">Замовити прорахунок</span></div>
+</div>
+</div>
+
+<div class="swiper-slide services-hruba__slider__item"><img alt="services" loading="lazy" src="/content/uploads/images/services-2.png" />
+<div class="services-hruba__item__content">
+<h4>Монтаж камінів під ключ будь-якої складності</h4>
+
+<p>Допоможемо підібрати камін та змонтувати</p>
+
+<div class="hruba__button"><span class="button-content">Замовити прорахунок</span></div>
+</div>
+</div>
+
+<div class="swiper-slide services-hruba__slider__item"><img alt="services" loading="lazy" src="/content/uploads/images/banner-bottom_hruba-mob.png" />
+<div class="services-hruba__item__content">
+<h4>Монтаж лазні під ключ</h4>
+
+<p>Допоможемо підібрати матеріали та аксесуари для лазні</p>
+
+<div class="hruba__button"><span class="button-content">Замовити прорахунок</span></div>
+</div>
+</div>
+
+<div class="swiper-slide services-hruba__slider__item"><img alt="services" loading="lazy" src="/content/uploads/images/services-4.png" />
+<div class="services-hruba__item__content">
+<h4>Монтаж мангального комплексу</h4>
+
+<p>Допоможемо проектувати мангальну зону із зоною відпочинку</p>
+
+<div class="hruba__button"><span class="button-content">Замовити прорахунок</span></div>
+</div>
+</div>
+</div>
+
+<div class="swiper-scrollbar">
+<div class="swiper-scrollbar-drag">.</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Reviews -->
+
+<section class="reviews-hruba container-hruba margin-bottom-hruba">
+<h3 class="reviews-hruba__title hruba-subtitle">Відгуки наших клієнтів</h3>
+
+<div class="slider-screen">
+<div class="reviews-hruba__slider">
+<div class="swiper-wrapper reviews-hruba-carousel">
+<div class="swiper-slide reviews-hruba__slider__item">
+<div class="reviews-hruba__slider__item__content">
+<div class="reviews-hruba__slider__item__title">
+<h4>Андрій</h4>
+
+<div class="reviews-hruba__slider__item-stars"><img alt="reviews_star" loading="lazy" src="/content/uploads/images/reviews_star.svg" /> <img alt="reviews_star" loading="lazy" src="/content/uploads/images/reviews_star.svg" /> <img alt="reviews_star" loading="lazy" src="/content/uploads/images/reviews_star.svg" /> <img alt="reviews_star" loading="lazy" src="/content/uploads/images/reviews_star.svg" /> <img alt="reviews_star" loading="lazy" src="/content/uploads/images/reviews_star.svg" /></div>
+</div>
+
+<p class="reviews-hruba__slider__item__text">Дуже задоволений роботою компанії HRUBA щодо монтажу димоходу для мого дому. Професійний підхід, швидко та якісно!</p>
+</div>
+</div>
+
+<div class="swiper-slide reviews-hruba__slider__item">
+<div class="reviews-hruba__slider__item__content">
+<div class="reviews-hruba__slider__item__title">
+<h4>Віктор</h4>
+
+<div class="reviews-hruba__slider__item-stars"><img alt="reviews_star" loading="lazy" src="/content/uploads/images/reviews_star.svg" /> <img alt="reviews_star" loading="lazy" src="/content/uploads/images/reviews_star.svg" /> <img alt="reviews_star" loading="lazy" src="/content/uploads/images/reviews_star.svg" /> <img alt="reviews_star" loading="lazy" src="/content/uploads/images/reviews_star.svg" /> <img alt="reviews_star" loading="lazy" src="/content/uploads/images/reviews_star.svg" /></div>
+</div>
+
+<p class="reviews-hruba__slider__item__text">Дякую команді HRUBA за чудово підібрану топку для моєї бані. Вибір виявився ідеальним!</p>
+</div>
+</div>
+
+<div class="swiper-slide reviews-hruba__slider__item">
+<div class="reviews-hruba__slider__item__content">
+<div class="reviews-hruba__slider__item__title">
+<h4>Матвій</h4>
+
+<div class="reviews-hruba__slider__item-stars"><img alt="reviews_star" loading="lazy" src="/content/uploads/images/reviews_star.svg" /> <img alt="reviews_star" loading="lazy" src="/content/uploads/images/reviews_star.svg" /> <img alt="reviews_star" loading="lazy" src="/content/uploads/images/reviews_star.svg" /> <img alt="reviews_star" loading="lazy" src="/content/uploads/images/reviews_star.svg" /> <img alt="reviews_star" loading="lazy" src="/content/uploads/images/reviews_star.svg" /></div>
+</div>
+
+<p class="reviews-hruba__slider__item__text">Швидко підібрали димоход для бані. Велике спасибі за якісний монтаж та знижку!</p>
+</div>
+</div>
+
+<div class="swiper-slide reviews-hruba__slider__item">
+<div class="reviews-hruba__slider__item__content">
+<div class="reviews-hruba__slider__item__title">
+<h4>Іван</h4>
+
+<div class="reviews-hruba__slider__item-stars"><img alt="reviews_star" loading="lazy" src="/content/uploads/images/reviews_star.svg" /> <img alt="reviews_star" loading="lazy" src="/content/uploads/images/reviews_star.svg" /> <img alt="reviews_star" loading="lazy" src="/content/uploads/images/reviews_star.svg" /> <img alt="reviews_star" loading="lazy" src="/content/uploads/images/reviews_star.svg" /> <img alt="reviews_star" loading="lazy" src="/content/uploads/images/reviews_star.svg" /></div>
+</div>
+
+<p class="reviews-hruba__slider__item__text">Дякую хлопцям за чудово підібрану топку для моєї бані. Вибір виявився ідеальним !</p>
+</div>
+</div>
+
+<div class="swiper-slide reviews-hruba__slider__item">
+<div class="reviews-hruba__slider__item__content">
+<div class="reviews-hruba__slider__item__title">
+<h4>Людмила</h4>
+
+<div class="reviews-hruba__slider__item-stars"><img alt="reviews_star" loading="lazy" src="/content/uploads/images/reviews_star.svg" /> <img alt="reviews_star" loading="lazy" src="/content/uploads/images/reviews_star.svg" /> <img alt="reviews_star" loading="lazy" src="/content/uploads/images/reviews_star.svg" /> <img alt="reviews_star" loading="lazy" src="/content/uploads/images/reviews_star.svg" /> <img alt="reviews_star" loading="lazy" src="/content/uploads/images/reviews_star.svg" /></div>
+</div>
+
+<p class="reviews-hruba__slider__item__text">Швидко підібрали димоход для бані. Велике спасибі за якісний монтаж та знижку!</p>
+</div>
+</div>
+
+<div class="swiper-slide reviews-hruba__slider__item">
+<div class="reviews-hruba__slider__item__content">
+<div class="reviews-hruba__slider__item__title">
+<h4>Олег</h4>
+
+<div class="reviews-hruba__slider__item-stars"><img alt="reviews_star" loading="lazy" src="/content/uploads/images/reviews_star.svg" /> <img alt="reviews_star" loading="lazy" src="/content/uploads/images/reviews_star.svg" /> <img alt="reviews_star" loading="lazy" src="/content/uploads/images/reviews_star.svg" /> <img alt="reviews_star" loading="lazy" src="/content/uploads/images/reviews_star.svg" /> <img alt="reviews_star" loading="lazy" src="/content/uploads/images/reviews_star.svg" /></div>
+</div>
+
+<p class="reviews-hruba__slider__item__text">Сам з Одеси, хлопці завдяки відео та фото допомогли підібрати піч для лазні, зібрати димохід. Сам все встановив, працює ідеально!</p>
+</div>
+</div>
+</div>
+
+<div class="swiper-button swiper-button-next">&nbsp;</div>
+
+<div class="swiper-button swiper-button-prev">&nbsp;</div>
+
+<div class="swiper-scrollbar">
+<div class="swiper-scrollbar-drag">.</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Banner bottom-->
+
+<section class="banner-bottom-hruba">
+<div class="banner-bottom-hruba__content container-hruba">
+<h2 class="banner-bottom-hruba__title">Потрібен монтаж димоходу?</h2>
+
+<p>Залиште свій номер телефону і наш спеціаліст допоможе Вам.</p>
+
+<div class="hruba__button"><span class="button-content">Замовити прорахунок</span></div>
+</div>
+</section>
+</div>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script><script>
+
+    if (window.innerWidth > 900) {
+        document.querySelectorAll('.hruba__button').forEach((item) => {
+            item.addEventListener('click', () => {
+                document.querySelector('[data-modal="#call-me"]').click();
+            })
+        })
+    } else {
+        document.querySelectorAll('.hruba__button').forEach((item) => {
+            item.addEventListener('click', () => {
+                document.querySelector('[href="#menu"]').click();
+                document.querySelector('[href="#callback-form"]').click();
+            })
+        })
+    }
+
+    var swiperOurWorks = new Swiper(".our-works__slider", {
+        freeMode: true,
+        loop: true,
+        slidesPerView: 4,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        scrollbar: {
+            el: ".swiper-scrollbar",
+            hide: true,
+        },
+        breakpoints: {
+            0: {
+                slidesPerView: "auto",
+                spaceBetween: 10,
+            },
+            768: {
+                spaceBetween: 15,
+            },
+            1024: {
+                spaceBetween: 30,
+            },
+        },
+    });
+
+    var swiperServices = new Swiper(".services-hruba__slider", {
+        freeMode: true,
+        slidesPerView: 4,
+        scrollbar: {
+            el: ".swiper-scrollbar",
+            hide: true,
+        },
+        breakpoints: {
+            0: {
+                slidesPerView: "auto",
+                spaceBetween: 10,
+            },
+            768: {
+                spaceBetween: 15,
+            },
+            1024: {
+                spaceBetween: 30,
+            },
+        },
+    });
+
+    var swiperReviews = new Swiper(".reviews-hruba__slider", {
+        freeMode: true,
+        loop: true,
+        slidesPerView: 3,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        scrollbar: {
+            el: ".swiper-scrollbar",
+            hide: true,
+        },
+        breakpoints: {
+            0: {
+                slidesPerView: "auto",
+                spaceBetween: 10,
+            },
+            768: {
+                spaceBetween: 15,
+            },
+            1024: {
+                spaceBetween: 30,
+            },
+        },
+    });
+
+</script>
