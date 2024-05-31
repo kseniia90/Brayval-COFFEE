@@ -37,6 +37,7 @@
 
 body {
     font-family: 'Helvetica', sans-serif;
+    scroll-behavior: smooth;
 }
 
 * {
@@ -52,6 +53,16 @@ body {
 
 .wrapper-br-service {
     padding: 0;
+    overflow-y: scroll;
+    scroll-behavior: smooth !important;
+
+}
+
+#br-service-repair-block,
+#br-service-map-block,
+#br-service-price-block,
+#br-service-review-block {
+    scroll-margin-top: 60px;
 }
 
 .container-br-service {
@@ -61,6 +72,7 @@ body {
     margin: 0 auto;
     width: 100%;
     box-sizing: border-box;
+    scroll-behavior: smooth !important;
 }
 
 .br-service__slider-block p,
@@ -154,7 +166,7 @@ a {
 }
 
 .banner-br-service__bg {
-    background: url(./img/banner_br-service.webp);
+    background: url(./img/banner_br-service.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -372,6 +384,7 @@ a {
 
 .equipment-card {
     width: 100%;
+    height: 100%;
     max-width: 425px;
     padding: 20px;
     display: flex;
@@ -500,9 +513,14 @@ a {
 }
 
 .brands-card {
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.brands-card img{
+    width: 100%;
 }
 
 .repair-info {
@@ -975,6 +993,11 @@ p.br-service-pref-title {
     border-left: 4px solid rgba(255, 153, 0, 1);
 }
 
+.accordion__content a {
+    color: var(--yellow);
+    font-size: 1.3rem;
+}
+
 .accordion__active .accordion__content {
     padding: 10px 20px 20px;
     opacity: 1;
@@ -985,6 +1008,7 @@ p.br-service-pref-title {
 }
 
 .services-card {
+    height: 100%;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -999,21 +1023,21 @@ p.br-service-pref-title {
 }
 
 .services-card.card-1 {
-    background: url(./img/image_16.webp);
+    background: url(./img/image_16.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .services-card.card-2 {
-    background: url(./img/image_17.webp);
+    background: url(./img/image_17.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .services-card.card-3 {
-    background: url(./img/image_18.webp);
+    background: url(./img/image_18.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1096,6 +1120,10 @@ p.br-service-pref-title {
     font-size: 25px;
     font-weight: 300;
     line-height: 32.72px;
+}
+
+.price-table tr td:first-child {
+    text-align: left;
 }
 
 .price-table tr td:last-child {

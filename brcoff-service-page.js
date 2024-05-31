@@ -13,6 +13,12 @@
 //     })
 // }
 
+// document.querySelectorAll('.br-service__form-btn').forEach((item)=>{
+//     item.addEventListener('click', ()=>{
+//         document.querySelector('[data-modal="#call-me"]').click();
+//     })
+// })
+
 var swiperOurWorks = new Swiper(".br-service__slider_1", {
     freeMode: true,
     loop: true,
