@@ -418,6 +418,7 @@ a {
 
 .equipment-card .br-service-subtitle {
     margin-bottom: 0 !important;
+    min-height: 80px;
 }
 
 .equipment-card-details {
@@ -1721,3 +1722,163 @@ p.br-service-pref-title {
         display: none;
     } 
 }
+
+/*popup start */
+
+.brcoff-popup {
+    display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 150;
+	background-color: rgba(0, 0, 0, .5);
+	transition: opacity 200ms ease-in;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.brcoff-popup.active {
+	display: block;
+}
+
+.brcoff-popup-dialog {
+	position: relative;
+	width: 550px;
+	min-height: 100vh;
+	padding: 20px 0;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.brcoff-popup-content {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	width: 100%;
+	padding: 30px 40px 30px;
+	outline: 0;
+	border-radius: 12px;
+}
+ 
+
+.brcoff-popup-body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+	flex: 1 1 auto;
+}
+
+.brcoff-popup h2 {
+	font-size: 32px;
+    font-weight: normal;
+}
+
+.brcoff-popup__title {
+    width: 100%;
+    display: flex;
+	justify-content: space-between;
+	align-items: center;
+    gap: 20px;
+}
+
+.brcoff-popup__close .brcoff__close-icon {
+	display: block;
+    width: 25px;
+    height: 25px;
+    font-size: 25px;
+    color: #b2b2b2;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.brcoff-popup__close .brcoff__close-icon:hover {
+    color: #1c80c5;
+}
+
+.brcoff-popup__form-block {
+    display: flex;
+	justify-content: stretch;
+	align-items: flex-start;
+	flex-direction: column;
+    gap: 20px;
+}
+
+.brcoff-form {
+    width: 100%; 
+    display: flex;
+	justify-content: stretch;
+	align-items: stretch;
+	flex-direction: column;
+    gap: 20px;
+}
+
+.brcoff-form  input {
+    border: 1px solid #b2b2b2;
+    border-radius: 4px;
+    line-height: normal;
+    transition: border-color .1s;
+    padding: 6px 8px;
+    font-size: 16px;
+    height: 36px;
+    outline: none;
+}
+
+.brcoff-form  input:active,
+.brcoff-form  input:focus {
+    border: 1px solid #1c80c5;
+}
+
+.brcoff-popup p {
+    line-height: 1.2rem;
+}
+
+.brcoff-form-error,
+.brcoff-form-success {
+    display: none;
+}
+
+.brcoff-form-message.error .brcoff-form-error,
+.brcoff-form-message.success .brcoff-form-success {
+    display: block;
+}
+
+@media (max-width: 768px) {
+
+    .brcoff-popup.active {
+        overflow-y: auto;
+    }
+
+	.brcoff-popup-dialog {
+		width: calc(100% - 30px);
+		min-height: 100%;
+		height: auto;
+		padding: 0;
+	}
+
+	.language-popup-dialog {
+		width: calc(100% - 30px);
+		min-height: 100%;
+		height: auto;   
+	}
+
+	.brcoff-popup-content {
+		padding: 20px 15px 50px;
+	}
+
+    .brcoff-popup h2 {
+        font-size: 24px;
+    }
+
+}
+/*popup end*/

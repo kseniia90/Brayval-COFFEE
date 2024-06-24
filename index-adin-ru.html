@@ -453,6 +453,7 @@ border: 1px solid var(--yellow)!important;
 
 .equipment-card .br-service-subtitle {
     margin-bottom: 0 !important;
+    min-height: 80px;
 }
 
 .equipment-card-details {
@@ -1467,6 +1468,10 @@ p.br-service-pref-title {
         padding: 15px;
     }  
 
+    .equipment-card .br-service-subtitle {
+        min-height:auto;
+    }
+
     .brands-card {
         min-width: 155px;
     }
@@ -1834,6 +1839,166 @@ p.br-service-pref-title {
         margin: 25px 0 0;
     }
 }
+
+/*popup start */
+
+.brcoff-popup {
+    display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 150;
+	background-color: rgba(0, 0, 0, .5);
+	transition: opacity 200ms ease-in;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.brcoff-popup.active {
+	display: block;
+}
+
+.brcoff-popup-dialog {
+	position: relative;
+	width: 550px;
+	min-height: 100vh;
+	padding: 20px 0;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.brcoff-popup-content {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	width: 100%;
+	padding: 30px 40px 30px;
+	outline: 0;
+	border-radius: 12px;
+}
+ 
+
+.brcoff-popup-body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+	flex: 1 1 auto;
+}
+
+.brcoff-popup h2 {
+	font-size: 32px;
+    font-weight: normal;
+}
+
+.brcoff-popup__title {
+    width: 100%;
+    display: flex;
+	justify-content: space-between;
+	align-items: center;
+    gap: 20px;
+}
+
+.brcoff-popup__close .brcoff__close-icon {
+	display: block;
+    width: 25px;
+    height: 25px;
+    font-size: 25px;
+    color: #b2b2b2;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.brcoff-popup__close .brcoff__close-icon:hover {
+    color: #1c80c5;
+}
+
+.brcoff-popup__form-block {
+    display: flex;
+	justify-content: stretch;
+	align-items: flex-start;
+	flex-direction: column;
+    gap: 20px;
+}
+
+.brcoff-form {
+    width: 100%; 
+    display: flex;
+	justify-content: stretch;
+	align-items: stretch;
+	flex-direction: column;
+    gap: 20px;
+}
+
+.brcoff-form  input {
+    border: 1px solid #b2b2b2;
+    border-radius: 4px;
+    line-height: normal;
+    transition: border-color .1s;
+    padding: 6px 8px;
+    font-size: 16px;
+    height: 36px;
+    outline: none;
+}
+
+.brcoff-form  input:active,
+.brcoff-form  input:focus {
+    border: 1px solid #1c80c5;
+}
+
+.brcoff-popup p {
+    line-height: 1.2rem;
+}
+
+.brcoff-form-error,
+.brcoff-form-success {
+    display: none;
+}
+
+.brcoff-form-message.error .brcoff-form-error,
+.brcoff-form-message.success .brcoff-form-success {
+    display: block;
+}
+
+@media (max-width: 768px) {
+
+    .brcoff-popup.active {
+        overflow-y: auto;
+    }
+    
+	.brcoff-popup-dialog {
+		width: calc(100% - 30px);
+		min-height: 100%;
+		height: auto;
+		padding: 0;
+	}
+
+	.language-popup-dialog {
+		width: calc(100% - 30px);
+		min-height: 100%;
+		height: auto;   
+	}
+
+	.brcoff-popup-content {
+		padding: 20px 15px 50px;
+	}
+
+    .brcoff-popup h2 {
+        font-size: 24px;
+    }
+
+}
+/*popup end*/
 </style>
 <main>
 <div class="wrapper-br-service"><!-- Banner -->
@@ -2118,7 +2283,7 @@ p.br-service-pref-title {
 
 <div class="repair-table-block">
 <div class="hide-table">
-<table class="repair-table">
+<table class="repair-table" id="nb_order_table">
 	<tbody>
 		<tr>
 			<th>Заявка</th>
@@ -2759,24 +2924,39 @@ p.br-service-pref-title {
 <div class="map-block-col col-2"><iframe allowfullscreen="" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d635.8669482976528!2d30.5001018!3d50.395119!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c8d950ed3c99%3A0x6ebf590d927bbeca!2sBrayval%20Coffee!5e0!3m2!1suk!2sua!4v1717073494389!5m2!1suk!2sua" style="border:0;" width="600"></iframe></div>
 </div>
 </section>
+
+ <!-- Call-back popup -->
+ <div class="brcoff-popup">
+    <div class="brcoff-popup-dialog">
+        <div class="brcoff-popup-content">
+            <div class="brcoff-popup-body">
+                <div class="brcoff-popup__title">
+                    <h2 >Передзвонити вам?</h2>
+                    <div class="brcoff-popup__close">
+                        <span class="brcoff__close-icon">×</span>
+                    </div>
+                </div>
+                <div class="brcoff-popup__form-block">
+                    <p class="brcoff-popup-msg ">Вкажіть номер телефону та ім'я. Ми зв'яжемося з вами найближчим часом.</p>
+                    <form action="" class="brcoff-form">
+                        <input type="text" name="user_name" placeholder="Ім'я">
+                        <input type="tel" name="user_phone" maxlength="13" placeholder="Телефон*">
+                        <button class="br-service__button">Надіслати</button>
+                    </form>
+                </div>
+                <div class="brcoff-form-message">
+                    <p class="brcoff-form-error">Вказаний номер телефону не знайдений. Вкажіть, будь ласка номер який був вказаний при зверненні в сервісний центр, і повторіть запит. Гарного Вам дня!</p>
+                    <p class="brcoff-form-success">Ваша заявка прийнята, майстер звяжеться з Вами найближчім часом</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </div>
 </main>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script><script>
 
-if(window.innerWidth > 900){
-    document.querySelectorAll('.call-me__btn').forEach((item)=>{
-        item.addEventListener('click', ()=>{
-            document.querySelector('[data-modal="#call-me"]').click();
-        })
-    })
-}else{
-    document.querySelectorAll('.call-me__btn').forEach((item)=>{
-        item.addEventListener('click', ()=>{
-            document.querySelector('[href="#menu"]').click();
-            document.querySelector('[href="#callback-form"]').click();
-        })
-    })
-};
 
 var swiperOurWorks = new Swiper(".br-service__slider_1", {
     freeMode: true,
@@ -2943,6 +3123,34 @@ document.querySelector('.price-table-btn').addEventListener('click', function(){
         linkText.textContent = "Переглянути всі";
         priceTable.querySelector('.hide-table').classList.remove('show');
       }
-})
+});
+
+// popup start
+
+if (document.querySelector(".brcoff-popup") !== null) {
+
+window.addEventListener("click", function (e) {
+
+    if(e.target.closest('.call-me__btn')) {
+        e.preventDefault();
+        document.querySelector(".brcoff-popup").classList.add("active");
+        document.body.style.overflow = "hidden";
+    } else {
+        if(e.target.closest('.brcoff-popup__close')) {
+            e.preventDefault();
+            document.querySelector(".brcoff-popup").classList.remove("active");
+            document.body.style.overflow = "auto";
+        }
+
+        if (document.querySelector(".brcoff-popup.active") && !e.target.closest('.brcoff-popup-content')) {
+            document.querySelector(".brcoff-popup").classList.remove("active");
+            document.body.style.overflow = "auto";
+        }
+    }  
+}); 
+
+};
+
+// popup end
 
 </script>

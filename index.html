@@ -111,7 +111,7 @@
                                             <span class="price">₴250</span>
                                         </div>
                                     </div>
-                                    <div class="br-service__button">
+                                    <div class="br-service__button call-me__btn">
                                         <span class="button-content">Замовити</span>
                                     </div>
                                 </div>
@@ -130,7 +130,7 @@
                                             <span class="price">₴250</span>
                                         </div>
                                     </div>
-                                    <div class="br-service__button">
+                                    <div class="br-service__button call-me__btn">
                                         <span class="button-content">Замовити</span>
                                     </div>
                                 </div>
@@ -149,7 +149,7 @@
                                             <span class="price">₴250</span>
                                         </div>
                                     </div>
-                                    <div class="br-service__button">
+                                    <div class="br-service__button call-me__btn">
                                         <span class="button-content">Замовити</span>
                                     </div>
                                 </div>
@@ -163,7 +163,7 @@
                                     <h5 class="br-service-subtitle">Автоматична кавомашина</h5>
                                     <div class="equipment-card-details">
                                         <p>діагностика</p>
-                                        <div class="equipment-card-price">
+                                        <div class="equipment-card-price call-me__btn">
                                             <span>від</span>
                                             <span class="price">₴250</span>
                                         </div>
@@ -187,7 +187,7 @@
                                             <span class="price">₴250</span>
                                         </div>
                                     </div>
-                                    <div class="br-service__button">
+                                    <div class="br-service__button call-me__btn">
                                         <span class="button-content">Замовити</span>
                                     </div>
                                 </div>
@@ -305,7 +305,7 @@
 
                 <div class="repair-table-block">
                     <div class="hide-table">
-                        <table class="repair-table">
+                        <table class="repair-table" id="nb_order_table">
                             <tr>
                                 <th>Заявка</th>
                                 <th>Модель</th>
@@ -393,7 +393,7 @@
                                     <img src="./img/Viber.svg" alt="viber" height="45" width="45">
                                 </a>
                             </div>
-                            <div class="br-service__button">
+                            <div class="br-service__button call-me__btn">
                                 <span class="button-content">Замовити зворотній дзвінок</span>
                             </div>
                         </div>
@@ -410,7 +410,7 @@
                                     <img src="./img/Viber.svg" alt="viber" height="45" width="45">
                                 </a>
                             </div>
-                            <div class="br-service__button">
+                            <div class="br-service__button call-me__btn">
                                 <span class="button-content">Замовити зворотній дзвінок</span>
                             </div>
                         </div>
@@ -749,14 +749,14 @@
             </section>
 
              <!-- Reviews -->
-             <section class="container-br-service margin-bottom-br-service" id="br-service-review-block">
+             <!-- <section class="container-br-service margin-bottom-br-service" id="br-service-review-block">
                 <p class="br-service-label-title">Відгуки<span class="line-after"></span></p>
                 <h3 class="br-service-title">Наші задоволені клієнти</h3>
                 <div class="review-block margin-top-br-service">
                     <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
                     <div class="elfsight-app-8c31bd70-5efe-4b3a-a63d-00d57e6a0f29">&nbsp;</div>
                 </div>
-            </section>
+            </section> -->
 
             <!-- FAQ -->
             <section class="container-br-service margin-bottom-br-service">
@@ -1178,7 +1178,38 @@
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
-            </section>          
+            </section>    
+            
+            <!-- Call-back popup -->
+            <div class="brcoff-popup">
+                <div class="brcoff-popup-dialog">
+                    <div class="brcoff-popup-content">
+                        <div class="brcoff-popup-body">
+                            <div class="brcoff-popup__title">
+                                <h2 >Передзвонити вам?</h2>
+                                <div class="brcoff-popup__close">
+                                    <span class="brcoff__close-icon">×</span>
+                                </div>
+                            </div>
+                            <div class="brcoff-popup__form-block">
+                                <p class="brcoff-popup-msg ">Вкажіть номер телефону та ім'я. Ми зв'яжемося з вами найближчим часом.</p>
+                                <form action="" class="brcoff-form">
+                                    <input type="text" name="user_name" placeholder="Ім'я">
+                                    <input type="tel" name="user_phone" maxlength="13" placeholder="Телефон*">
+                                    <button class="br-service__button">Надіслати</button>
+                                </form>
+                            </div>
+                            <div class="brcoff-form-message">
+                                <p class="brcoff-form-error">Вказаний номер телефону не знайдений. Вкажіть, будь ласка номер який був вказаний при зверненні в сервісний центр, і повторіть запит. Гарного Вам дня!</p>
+                                <p class="brcoff-form-success">Ваша заявка прийнята, майстер звяжеться з Вами найближчім часом</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
     </main>
 

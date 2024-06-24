@@ -1,0 +1,6 @@
+
+ Якщо форму надіслано успішно: блоку .brcoff-popup__form-block додати .style.display = "none"
+а блоку .brcoff-form-message додати клас  success;
+
+ Якщо помилка: блоку .brcoff-popup__form-block додати .style.display = "none"
+а блоку .brcoff-form-message додати клас  error;

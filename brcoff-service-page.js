@@ -184,7 +184,35 @@ document.querySelector('.price-table-btn').addEventListener('click', function(){
         linkText.textContent = "Переглянути всі";
         priceTable.querySelector('.hide-table').classList.remove('show');
       }
-})
+});
+
+// popup start
+
+if (document.querySelector(".brcoff-popup") !== null) {
+
+    window.addEventListener("click", function (e) {
+
+        if(e.target.closest('.call-me__btn')) {
+            e.preventDefault();
+            document.querySelector(".brcoff-popup").classList.add("active");
+            document.body.style.overflow = "hidden";
+        } else {
+            if(e.target.closest('.brcoff-popup__close')) {
+                e.preventDefault();
+                document.querySelector(".brcoff-popup").classList.remove("active");
+                document.body.style.overflow = "auto";
+            }
+    
+            if (document.querySelector(".brcoff-popup.active") && !e.target.closest('.brcoff-popup-content')) {
+                document.querySelector(".brcoff-popup").classList.remove("active");
+                document.body.style.overflow = "auto";
+            }
+        }  
+    }); 
+
+  };
+  
+  // popup end
 
 
 
