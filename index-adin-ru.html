@@ -84,12 +84,12 @@
 .container-br-service a {
     color: inherit;
     text-decoration: none !important;
-    border-bottom: none !important;
+    border-bottom: none;
 }
 
 .container-br-service a:hover {
     text-decoration: none !important;
-    border-bottom: none !important;
+    border-bottom: none;
 }
 
 .container-br-service ul,
@@ -453,7 +453,7 @@ border: 1px solid var(--yellow)!important;
 
 .equipment-card .br-service-subtitle {
     margin-bottom: 0 !important;
-    min-height: 80px;
+min-height: 80px;
 }
 
 .equipment-card-details {
@@ -644,6 +644,7 @@ border: 1px solid var(--yellow)!important;
 .repair-table tr th,
 .repair-table tr td {
     padding: 10px;
+    text-align: center;
 }
 
 .repair-table tbody tr td{
@@ -1261,7 +1262,7 @@ p.br-service-pref-title {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 64px;
+    height: 15px;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4) 0%, white 100%);
 }
 
@@ -1467,10 +1468,9 @@ p.br-service-pref-title {
         max-width: none;
         padding: 15px;
     }  
-
-    .equipment-card .br-service-subtitle {
-        min-height:auto;
-    }
+.equipment-card .br-service-subtitle {
+    min-height:auto;
+}
 
     .brands-card {
         min-width: 155px;
@@ -1824,7 +1824,7 @@ p.br-service-pref-title {
     }
     
     .hide-table:after {
-        height: 40px;
+        height: 10px;
     }
     
     .hide-table.show {
@@ -1839,7 +1839,6 @@ p.br-service-pref-title {
         margin: 25px 0 0;
     }
 }
-
 /*popup start */
 
 .brcoff-popup {
@@ -2010,13 +2009,13 @@ p.br-service-pref-title {
 
 <p>Специализируемся исключительно на ремонте кофейного оборудования</p>
 
-<p class="cont">Прямой номер телефона <a href="tel:+380671804964">(067) 180-49-64</a></p>
+<p class="cont">Прямой номер телефона <a class="btn_event" data-event="phone" href="tel:+380671804964">(067) 180-49-64</a></p>
 
 <ul class="banner-br-service__list">
-	<li class="banner-br-service__list-item"><a class="br-service__button" href="#br-service-map-block"><span class="button-content">Проложить маршрут&nbsp;</span> </a></li>
-	<li class="banner-br-service__list-item"><a class="br-service__button" href="#br-service-repair-block"><span class="button-content">Этапы ремонта&nbsp;</span> </a></li>
-	<li class="banner-br-service__list-item"><a class="br-service__button" href="#br-service-price-block"><span class="button-content">Прайс</span> </a></li>
-	<li class="banner-br-service__list-item"><a class="br-service__button" href="#br-service-review-block"><span class="button-content">Отзывы</span> </a></li>
+	<li class="banner-br-service__list-item"><a class="br-service__button btn_event" data-event="route" href="#br-service-map-block"><span class="button-content">Проложить маршрут&nbsp;</span> </a></li>
+	<li class="banner-br-service__list-item"><a class="br-service__button btn_event" data-event="repair" href="#br-service-repair-block"><span class="button-content">Этапы ремонта&nbsp;</span> </a></li>
+	<li class="banner-br-service__list-item"><a class="br-service__button btn_event" data-event="price" href="#br-service-price-block"><span class="button-content">Прайс</span> </a></li>
+	<li class="banner-br-service__list-item"><a class="br-service__button btn_event" data-event="feedback" href="#br-service-review-block"><span class="button-content">Отзывы</span> </a></li>
 </ul>
 </div>
 
@@ -2025,7 +2024,7 @@ p.br-service-pref-title {
 
 <p>Ваша заявка будет проработана в ближайшее время и с Вами свяжется ответственный человек, который предоставит полную консультацию по ремонту Вашей кофемашины.</p>
 
-<form class="br-service__form"><input name="user_name" placeholder="Имя" type="text" /> <input name="user_phone" placeholder="Номер телефона" type="phone" /><input name="user_email" placeholder="E-mail" type="email" /> <label class="br-service__form__checkbox"> Безналичный расчет <input type="checkbox" /> <span class="checkmark">.</span> </label><button class="br-service__button br-service__form-btn">Оставить заявку</button></form>
+<form class="br-service__form"><input name="user_name" placeholder="Имя" type="text" /> <input name="user_phone" placeholder="Номер телефона" type="phone" /><input name="user_email" placeholder="E-mail" type="email" /> <label class="br-service__form__checkbox"> Безналичный расчет <input type="checkbox" /> <span class="checkmark">.</span> </label><button class="br-service__button br-service__form-btn" data-type_request="order">Оставить заявку</button></form>
 </div>
 </div>
 </div>
@@ -2036,7 +2035,7 @@ p.br-service-pref-title {
 
 <p>Ваша заявка будет проработана в ближайшее время и с Вами свяжется ответственный человек, который предоставит полную консультацию по ремонту Вашей кофемашины.</p>
 
-<form class="br-service__form"><input name="user_name" placeholder="Имя" type="text" /> <input name="user_phone" placeholder="Номер телефона" type="phone" /><input name="user_email" placeholder="E-mail" type="email" /> <label class="br-service__form__checkbox"> Безналичный расчет <input type="checkbox" /> <span class="checkmark">.</span> </label><button class="br-service__button br-service__form-btn">Оставить заявку</button></form>
+<form class="br-service__form"><input name="user_name" placeholder="Имя" type="text" /> <input name="user_phone" placeholder="Номер телефона" type="phone" /><input name="user_email" placeholder="E-mail" type="email" /> <label class="br-service__form__checkbox"> Безналичный расчет <input type="checkbox" /> <span class="checkmark">.</span> </label><button class="br-service__button br-service__form-btn" data-type_request="order">Оставить заявку</button></form>
 </div>
 </div>
 </section>
@@ -2147,120 +2146,119 @@ p.br-service-pref-title {
 <h3 class="br-service-title">Мы ремонтируем</h3>
 
 <div class="slider-screen margin-top-br-service">
-    <div class="br-service__slider br-service__slider_2">
-    <div class="swiper-wrapper">
-    <div class="swiper-slide">
-    <div class="brands-card"><img alt="brand" loading="lazy" src="/content/uploads/images/brand_1.png" /></div>
-    </div>
-    
-    <div class="swiper-slide">
-    <div class="brands-card"><img alt="brand" loading="lazy" src="/content/uploads/images/brand_2.png" /></div>
-    </div>
-    
-    <div class="swiper-slide">
-    <div class="brands-card"><img alt="brand" loading="lazy" src="/content/uploads/images/brand_3.png" /></div>
-    </div>
-    
-    <div class="swiper-slide">
-    <div class="brands-card"><img alt="brand" loading="lazy" src="/content/uploads/images/brand_4.png" /></div>
-    </div>
-    
-    <div class="swiper-slide">
-    <div class="brands-card"><img alt="brand" loading="lazy" src="/content/uploads/images/brand_5.png" /></div>
-    </div>
-    
-    <div class="swiper-slide">
-    <div class="brands-card"><img alt="brand" loading="lazy" src="/content/uploads/images/brand_6.png" /></div>
-    </div>
-    
-    <div class="swiper-slide">
-    <div class="brands-card"><img alt="brand" loading="lazy" src="/content/uploads/images/brand_7.png" /></div>
-    </div>
-    
-    <div class="swiper-slide">
-    <div class="brands-card"><img alt="brand" loading="lazy" src="/content/uploads/images/brand_8.png" /></div>
-    </div>
-    
-    <div class="swiper-slide">
-    <div class="brands-card"><img alt="brand" loading="lazy" src="/content/uploads/images/brand_9-1.png" /></div>
-    </div>
-    
-    <div class="swiper-slide">
-    <div class="brands-card"><img alt="brand" loading="lazy" src="/content/uploads/images/brand_10.png" /></div>
-    </div>
-    
-    <div class="swiper-slide">
-    <div class="brands-card"><img alt="brand" loading="lazy" src="/content/uploads/images/brand_11.png" /></div>
-    </div>
-    
-    <div class="swiper-slide">
-    <div class="brands-card"><img alt="brand" loading="lazy" src="/content/uploads/images/brand_12.png" /></div>
-    </div>
+<div class="br-service__slider br-service__slider_2">
+<div class="swiper-wrapper">
+<div class="swiper-slide">
+<div class="brands-card"><img alt="brand" loading="lazy" src="/content/uploads/images/brand_1.png" /></div>
+</div>
 
-    <div class="swiper-slide">
-    <div class="brands-card"><img alt="brand" loading="lazy" src="/content/uploads/images/brand_13.png" /></div>
-    </div>
+<div class="swiper-slide">
+<div class="brands-card"><img alt="brand" loading="lazy" src="/content/uploads/images/brand_2.png" /></div>
+</div>
 
-    <div class="swiper-slide">
-    <div class="brands-card"><img alt="brand" loading="lazy" src="/content/uploads/images/brand_14.png" /></div>
-    </div>
+<div class="swiper-slide">
+<div class="brands-card"><img alt="brand" loading="lazy" src="/content/uploads/images/brand_3.png" /></div>
+</div>
 
-    <div class="swiper-slide">
-    <div class="brands-card"><img alt="brand" loading="lazy" src="/content/uploads/images/brand_151.png" /></div>
-    </div>
+<div class="swiper-slide">
+<div class="brands-card"><img alt="brand" loading="lazy" src="/content/uploads/images/brand_4.png" /></div>
+</div>
 
-    <div class="swiper-slide">
-    <div class="brands-card"><img alt="brand" loading="lazy" src="/content/uploads/images/brand_161.png" /></div>
-    </div>
+<div class="swiper-slide">
+<div class="brands-card"><img alt="brand" loading="lazy" src="/content/uploads/images/brand_5.png" /></div>
+</div>
 
-    <div class="swiper-slide">
-    <div class="brands-card"><img alt="brand" loading="lazy" src="/content/uploads/images/brand_17.png" /></div>
-    </div>
+<div class="swiper-slide">
+<div class="brands-card"><img alt="brand" loading="lazy" src="/content/uploads/images/brand_6.png" /></div>
+</div>
 
-    <div class="swiper-slide">
-    <div class="brands-card"><img alt="brand" loading="lazy" src="/content/uploads/images/brand_181.png" /></div>
-    </div>
+<div class="swiper-slide">
+<div class="brands-card"><img alt="brand" loading="lazy" src="/content/uploads/images/brand_7.png" /></div>
+</div>
 
-    <div class="swiper-slide">
-    <div class="brands-card"><img alt="brand" loading="lazy" src="/content/uploads/images/brand_191.png" /></div>
-    </div>
+<div class="swiper-slide">
+<div class="brands-card"><img alt="brand" loading="lazy" src="/content/uploads/images/brand_8.png" /></div>
+</div>
 
-    <div class="swiper-slide">
-    <div class="brands-card"><img alt="brand" loading="lazy" src="/content/uploads/images/brand_20.png" /></div>
-    </div>
+<div class="swiper-slide">
+<div class="brands-card"><img alt="brand" loading="lazy" src="/content/uploads/images/brand_9-1.png" /></div>
+</div>
 
-    <div class="swiper-slide">
-    <div class="brands-card"><img alt="brand" loading="lazy" src="/content/uploads/images/brand_21.png" /></div>
-    </div>
+<div class="swiper-slide">
+<div class="brands-card"><img alt="brand" loading="lazy" src="/content/uploads/images/brand_10.png" /></div>
+</div>
 
-    <div class="swiper-slide">
-    <div class="brands-card"><img alt="brand" loading="lazy" src="/content/uploads/images/brand_22.png" /></div>
-    </div>
+<div class="swiper-slide">
+<div class="brands-card"><img alt="brand" loading="lazy" src="/content/uploads/images/brand_11.png" /></div>
+</div>
 
-    <div class="swiper-slide">
-    <div class="brands-card"><img alt="brand" loading="lazy" src="/content/uploads/images/brand_231.png" /></div>
-    </div>
+<div class="swiper-slide">
+<div class="brands-card"><img alt="brand" loading="lazy" src="/content/uploads/images/brand_12.png" /></div>
+</div>
 
-    <div class="swiper-slide">
-    <div class="brands-card"><img alt="brand" loading="lazy" src="/content/uploads/images/brand_24.png" /></div>
-    </div>
+<div class="swiper-slide">
+<div class="brands-card"><img alt="brand" loading="lazy" src="/content/uploads/images/brand_13.png" /></div>
+</div>
 
-    <div class="swiper-slide">
-    <div class="brands-card"><img alt="brand" loading="lazy" src="/content/uploads/images/brand_25.png" /></div>
-    </div>
+<div class="swiper-slide">
+<div class="brands-card"><img alt="brand" loading="lazy" src="/content/uploads/images/brand_14.png" /></div>
+</div>
 
-    <div class="swiper-slide">
-    <div class="brands-card"><img alt="brand" loading="lazy" src="/content/uploads/images/brand_26.png" /></div>
-    </div>
+<div class="swiper-slide">
+<div class="brands-card"><img alt="brand" loading="lazy" src="/content/uploads/images/brand_151.png" /></div>
+</div>
 
-    </div>
-    
-    <div class="swiper-button swiper-button-next">&nbsp;</div>
-    
-    <div class="swiper-button swiper-button-prev">&nbsp;</div>
-    
-    <div class="swiper-scrollbar">&nbsp;</div>
-    </div>
+<div class="swiper-slide">
+<div class="brands-card"><img alt="brand" loading="lazy" src="/content/uploads/images/brand_161.png" /></div>
+</div>
+
+<div class="swiper-slide">
+<div class="brands-card"><img alt="brand" loading="lazy" src="/content/uploads/images/brand_17.png" /></div>
+</div>
+
+<div class="swiper-slide">
+<div class="brands-card"><img alt="brand" loading="lazy" src="/content/uploads/images/brand_181.png" /></div>
+</div>
+
+<div class="swiper-slide">
+<div class="brands-card"><img alt="brand" loading="lazy" src="/content/uploads/images/brand_191.png" /></div>
+</div>
+
+<div class="swiper-slide">
+<div class="brands-card"><img alt="brand" loading="lazy" src="/content/uploads/images/brand_20.png" /></div>
+</div>
+
+<div class="swiper-slide">
+<div class="brands-card"><img alt="brand" loading="lazy" src="/content/uploads/images/brand_21.png" /></div>
+</div>
+
+<div class="swiper-slide">
+<div class="brands-card"><img alt="brand" loading="lazy" src="/content/uploads/images/brand_22.png" /></div>
+</div>
+
+<div class="swiper-slide">
+<div class="brands-card"><img alt="brand" loading="lazy" src="/content/uploads/images/brand_231.png" /></div>
+</div>
+
+<div class="swiper-slide">
+<div class="brands-card"><img alt="brand" loading="lazy" src="/content/uploads/images/brand_24.png" /></div>
+</div>
+
+<div class="swiper-slide">
+<div class="brands-card"><img alt="brand" loading="lazy" src="/content/uploads/images/brand_25.png" /></div>
+</div>
+
+<div class="swiper-slide">
+<div class="brands-card"><img alt="brand" loading="lazy" src="/content/uploads/images/brand_26.png" /></div>
+</div>
+</div>
+
+<div class="swiper-button swiper-button-next">&nbsp;</div>
+
+<div class="swiper-button swiper-button-prev">&nbsp;</div>
+
+<div class="swiper-scrollbar">&nbsp;</div>
+</div>
 </div>
 </section>
 <!-- Repair stage -->
@@ -2279,76 +2277,16 @@ p.br-service-pref-title {
 </div>
 </div>
 
-<form class="br-service__form-search"><input name="model" placeholder="Номер заявки..." type="text" /><button class="br-service__button"><svg fill="none" height="18" viewbox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg"> <path d="M7.49547 0C3.36472 0 0 3.36472 0 7.49547C0 11.6262 3.36472 14.9909 7.49547 14.9909C9.29177 14.9909 10.9414 14.3531 12.2343 13.2942L16.7096 17.7695C16.7787 17.8415 16.8614 17.8989 16.953 17.9385C17.0445 17.978 17.143 17.9989 17.2427 18C17.3425 18.001 17.4414 17.9821 17.5337 17.9444C17.626 17.9067 17.7099 17.851 17.7804 17.7804C17.851 17.7099 17.9067 17.626 17.9444 17.5337C17.9821 17.4414 18.001 17.3425 18 17.2427C17.9989 17.143 17.978 17.0445 17.9385 16.953C17.8989 16.8614 17.8415 16.7787 17.7695 16.7096L13.2942 12.2343C14.3531 10.9414 14.9909 9.29177 14.9909 7.49547C14.9909 3.36472 11.6262 0 7.49547 0ZM7.49547 1.49909C10.8161 1.49909 13.4919 4.17489 13.4919 7.49547C13.4919 10.8161 10.8161 13.4919 7.49547 13.4919C4.17489 13.4919 1.49909 10.8161 1.49909 7.49547C1.49909 4.17489 4.17489 1.49909 7.49547 1.49909Z" fill="white"></path> </svg></button></form>
+<form class="br-service__form-search"><input name="model" placeholder="Номер заявки..." type="text" /><button class="br-service__button" id="search_lid"><svg fill="none" height="18" viewbox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg"> <path d="M7.49547 0C3.36472 0 0 3.36472 0 7.49547C0 11.6262 3.36472 14.9909 7.49547 14.9909C9.29177 14.9909 10.9414 14.3531 12.2343 13.2942L16.7096 17.7695C16.7787 17.8415 16.8614 17.8989 16.953 17.9385C17.0445 17.978 17.143 17.9989 17.2427 18C17.3425 18.001 17.4414 17.9821 17.5337 17.9444C17.626 17.9067 17.7099 17.851 17.7804 17.7804C17.851 17.7099 17.9067 17.626 17.9444 17.5337C17.9821 17.4414 18.001 17.3425 18 17.2427C17.9989 17.143 17.978 17.0445 17.9385 16.953C17.8989 16.8614 17.8415 16.7787 17.7695 16.7096L13.2942 12.2343C14.3531 10.9414 14.9909 9.29177 14.9909 7.49547C14.9909 3.36472 11.6262 0 7.49547 0ZM7.49547 1.49909C10.8161 1.49909 13.4919 4.17489 13.4919 7.49547C13.4919 10.8161 10.8161 13.4919 7.49547 13.4919C4.17489 13.4919 1.49909 10.8161 1.49909 7.49547C1.49909 4.17489 4.17489 1.49909 7.49547 1.49909Z" fill="white"></path> </svg></button></form>
 
 <div class="repair-table-block">
 <div class="hide-table">
 <table class="repair-table" id="nb_order_table">
 	<tbody>
 		<tr>
-			<th>Заявка</th>
+			<th>Акт приема-передачи</th>
 			<th>Модель</th>
 			<th>Статус</th>
-		</tr>
-		<tr>
-			<td>565656</td>
-			<td>Saeco Aulika Top</td>
-			<td class="status-new">Новый</td>
-		</tr>
-		<tr>
-			<td>565656</td>
-			<td>Saeco Aulika Top</td>
-			<td class="status-new">Новый</td>
-		</tr>
-		<tr>
-			<td>565656</td>
-			<td>Saeco Aulika Top</td>
-			<td class="status-inprogress">В работе</td>
-		</tr>
-		<tr>
-			<td>565656</td>
-			<td>Saeco Aulika Top</td>
-			<td class="status-inprogress">В работе</td>
-		</tr>
-		<tr>
-			<td>565656</td>
-			<td>Saeco Aulika Top</td>
-			<td class="status-done">Выполнено</td>
-		</tr>
-		<tr>
-			<td>565656</td>
-			<td>Saeco Aulika Top</td>
-			<td class="status-done">Выполнено</td>
-		</tr>
-		<tr>
-			<td>565656</td>
-			<td>Saeco Aulika Top</td>
-			<td class="status-new">Новый</td>
-		</tr>
-		<tr>
-			<td>565656</td>
-			<td>Saeco Aulika Top</td>
-			<td class="status-new">Новый</td>
-		</tr>
-		<tr>
-			<td>565656</td>
-			<td>Saeco Aulika Top</td>
-			<td class="status-inprogress">В работе</td>
-		</tr>
-		<tr>
-			<td>565656</td>
-			<td>Saeco Aulika Top</td>
-			<td class="status-inprogress">В работе</td>
-		</tr>
-		<tr>
-			<td>565656</td>
-			<td>Saeco Aulika Top</td>
-			<td class="status-done">Выполнено</td>
-		</tr>
-		<tr>
-			<td>565656</td>
-			<td>Saeco Aulika Top</td>
-			<td class="status-done">Выполнено</td>
 		</tr>
 	</tbody>
 </table>
@@ -2371,7 +2309,7 @@ p.br-service-pref-title {
 
 <div class="contact-us__links"><a href="tel:+380671804964">+380671804964</a> <a href="viber://chat?number=%2B380671804964"> <svg fill="none" height="45" viewbox="0 0 45 45" width="45" xmlns="http://www.w3.org/2000/svg"> <rect fill="#7E57C2" height="45" rx="22.5" width="45"></rect> <path d="M22.144 8.29018C21.2983 8.29501 20.4503 8.34569 19.595 8.44946C17.9594 8.64978 16.3384 8.98283 14.7828 9.69479C12.3089 10.8267 10.5547 12.7478 10.0458 15.5401C9.83017 16.7178 9.65571 17.9125 9.55637 19.1144C9.36495 21.4481 9.48367 23.7892 10.1476 26.0891C10.671 27.9016 11.6353 29.5307 13.3242 30.5878C14.039 31.0342 14.9815 31.2514 15.4734 31.4783C15.6115 31.5435 15.6454 31.5821 15.6527 31.5917C15.66 31.599 15.6794 31.6159 15.6769 31.7607C15.66 33.2377 15.6769 36.0952 15.6769 36.0952L15.6794 36.7106H16.7867L16.966 36.5368C16.966 36.5368 19.7791 33.841 20.7968 32.7309C20.9809 32.533 21.0754 32.422 21.0948 32.4099C21.1118 32.3978 21.0827 32.3906 21.2717 32.3858C22.6068 32.3592 23.9394 32.3085 25.2721 32.2361C27.0288 32.1396 28.8194 31.9731 30.5422 31.2563C32.042 30.6312 33.2947 29.6103 34.0532 28.0802C34.8285 26.5115 35.2429 24.8486 35.3979 23.1279C35.6548 20.2632 35.5651 17.3936 34.7704 14.5651C34.3027 12.907 33.3626 11.5049 31.9209 10.5154C30.1957 9.33278 28.25 8.88871 26.3455 8.60634C25.2333 8.44222 24.1139 8.33362 22.9896 8.29983C22.7085 8.29259 22.4275 8.28777 22.144 8.29018ZM22.9557 9.5355C24.0243 9.56446 25.0928 9.66824 26.1638 9.82753C28.0004 10.1002 29.7329 10.5154 31.2182 11.5338C32.4225 12.3592 33.1736 13.4742 33.5758 14.8957C34.3173 17.5408 34.4118 20.2511 34.1622 23.0193C34.0192 24.6145 33.6388 26.1181 32.9386 27.5348C32.3207 28.7849 31.3563 29.5789 30.0624 30.1171C28.5602 30.7422 26.927 30.9087 25.2067 31.0029C23.8886 31.0753 22.568 31.1235 21.2475 31.1501C20.9155 31.1573 20.5908 31.2442 20.3606 31.4131C20.1305 31.5821 20.0263 31.739 19.8833 31.8934C19.1564 32.685 17.7074 34.0776 16.9175 34.8402C16.9127 33.9183 16.9054 32.8033 16.9175 31.7752C16.9224 31.459 16.8497 31.1356 16.6679 30.8798C16.4862 30.624 16.2366 30.4695 15.9968 30.3585C15.2965 30.0351 14.3806 29.7889 13.9832 29.5403C12.5948 28.6715 11.8074 27.3683 11.3397 25.7464C10.7267 23.625 10.6104 21.4409 10.7921 19.2181C10.889 18.0645 11.0562 16.9085 11.267 15.7621C11.708 13.3463 13.094 11.8258 15.2989 10.817C16.6922 10.1799 18.1799 9.86614 19.7476 9.67548C20.8162 9.54516 21.8847 9.50413 22.9557 9.5355ZM23.2174 12.615C22.7061 12.615 22.2094 12.6729 21.7272 12.7791C21.3953 12.8564 21.1845 13.187 21.2596 13.5201C21.3347 13.8531 21.6691 14.0607 22.0034 13.9858C22.3936 13.8966 22.8006 13.8507 23.2174 13.8507C26.2462 13.8507 28.6886 16.2834 28.6886 19.2978C28.6886 19.7153 28.6425 20.1208 28.5529 20.5117C28.4778 20.8424 28.6862 21.1754 29.0205 21.2502C29.3549 21.3251 29.6869 21.1151 29.762 20.782C29.871 20.3042 29.9292 19.8094 29.9292 19.2978C29.9292 15.6149 26.9173 12.615 23.2174 12.615ZM17.029 13.8531C16.9272 13.8483 16.823 13.8555 16.714 13.8797C15.5873 14.1282 14.4678 14.9416 14.4363 16.3944C14.4678 16.5972 14.4654 16.8144 14.5405 16.9978C14.9088 17.8956 15.2287 18.8223 15.689 19.6719C17.9303 23.7988 21.3202 26.6684 25.6404 28.4905C26.1565 28.7077 26.6896 28.7536 27.2105 28.5364C27.9277 28.2395 28.5359 27.781 28.9406 27.1221C29.4954 26.2171 29.5027 25.5896 28.5892 24.9211C27.9907 24.4818 27.4019 24.0305 26.7962 23.6009C25.873 22.9493 24.8747 22.8359 24.1866 23.9798C24.1502 24.0377 24.0969 24.086 24.0509 24.1343C23.6971 24.5084 23.2634 24.6001 22.803 24.4118C21.056 23.695 19.7064 22.539 18.8923 20.8182C18.4125 19.807 18.5434 19.3002 19.4399 18.6269C19.5295 18.5617 19.6143 18.4917 19.6967 18.4169C20.0893 18.0597 20.1934 17.6349 19.9608 17.1547C19.435 16.059 18.7348 15.0815 17.848 14.2393C17.6081 14.0124 17.3343 13.87 17.029 13.8531ZM23.2077 14.4685C22.9339 14.4685 22.6625 14.4903 22.396 14.5361C22.1706 14.5651 21.9792 14.7147 21.8968 14.9247C21.8145 15.137 21.8556 15.376 22.001 15.5497C22.1488 15.7211 22.3814 15.8007 22.6044 15.7525C22.7982 15.7211 23.0017 15.7042 23.2077 15.7042C25.2236 15.7042 26.8422 17.3164 26.8422 19.3243C26.8422 19.5295 26.8253 19.7322 26.7938 19.9253C26.7453 20.1473 26.8253 20.379 26.9973 20.5262C27.1718 20.671 27.4116 20.712 27.6249 20.63C27.8357 20.5479 27.9859 20.3573 28.015 20.1328C28.061 19.8674 28.0828 19.597 28.0828 19.3243C28.0828 16.6503 25.8924 14.4685 23.2077 14.4685ZM23.1205 16.322C22.8975 16.3196 22.6892 16.4355 22.5753 16.6285C22.4638 16.8216 22.4638 17.0581 22.5753 17.2512C22.6892 17.4443 22.8975 17.5601 23.1205 17.5577C24.1551 17.5577 24.9813 18.3807 24.9813 19.4112C24.9789 19.6332 25.0952 19.8408 25.2891 19.9542C25.4829 20.0653 25.7204 20.0653 25.9142 19.9542C26.1081 19.8408 26.2244 19.6332 26.2219 19.4112C26.2219 17.7122 24.8263 16.322 23.1205 16.322Z" fill="white"></path> </svg> </a></div>
 
-<div class="br-service__button call-me__btn"><span class="button-content">Заказать обратный звонок</span></div>
+<div class="br-service__button call-me__btn" data-type_request="department"><span class="button-content">Заказать обратный звонок</span></div>
 </div>
 
 <div class="contact-us__col-ing"><img alt="man" height="338" loading="lazy" src="/content/uploads/images/man-3-1.png" width="245" /></div>
@@ -2381,7 +2319,7 @@ p.br-service-pref-title {
 <div class="contact-us__col-content">
 <h4 class="br-service-subtitle">Мастер ремонтирующий Вашу кофемашину</h4>
 
-<div class="br-service__button call-me__btn"><span class="button-content">Заказать обратный звонок</span></div>
+<div class="br-service__button call-me__btn" data-type_request="master"><span class="button-content">Заказать обратный звонок</span></div>
 </div>
 
 <div class="contact-us__col-ing"><img alt="man" height="338" loading="lazy" src="/content/uploads/images/man-3-2_1.png" width="245" /></div>
@@ -2407,7 +2345,7 @@ p.br-service-pref-title {
 	<p>Вы можете оставить заявку на сайте или обратиться нам в сервис. Мы оформим Вашу кофемашину за 3 &ndash; 5 минут. Вы получите акт с номером по которому Вы сможете проверять статус своей кофемашины в онлайне на нашем сайте.</p>
 	</div>
 
-	<div class="tabcontent-bottom"><b>Обратите внимание</b>
+	<div class="tabcontent-bottom"><b>Обратите внимание !</b>
 
 	<p>Если Вы хотите произвести оплату ремонта кофемашин по Безналичному расчету, эту информацию нужно предоставлять на Этапе приема, так как в нашей компании происходит автоматическое выставление счетов на электрону адрес. В завцы на ремонт нажмите галочку &quot;Безналичный расчет&quot; и заполните электронный адрес</p>
 
@@ -2481,19 +2419,20 @@ p.br-service-pref-title {
 
 <div class="br-service__item-right">
 <div class="br-service__item-text">
-<p>Это достаточно сложный и трудоемкий процесс в котором нужно иметь навык ремонта кофеварок и знание модельного ряда. практике. Наша компания специализируется на ремонте кофеварок Saeco, Philips/Saeco, Bosch, Jura, Siemens, Delonghi, Franke, Krups, WMF, Мелитта, Rheavendors, Gaggia, Nivona, BORK, AEG, Kaffit, KRUPS, LAVAZZA, Miele, Nespresso, Schaerer, Smeg, Tassimo, Vitek, Blaser, Ariete, Gorenje, Liberty's, Dr.Coffee и другие, более 11 лет. Многие думают, что обращаться в сервисный центр кофемашин нужно только тогда, когда кофеварка сломалась, но мы уверены в том, что ей нужно обслуживание раз в 3 месяца (можно и в домашних условиях) и полное техническое обслуживание раз в год. Регламент наших работ по Вашей кофемашине просчитан нашими специалистами, и делается на 1-год. <br>
-     <b>В регламент обслуживания кофемашины входит:</b></p>
+<p>Любая кофемашина требует профилактического ухода каждые три месяца в домашних условиях или в мастерской, не говоря о полном техническом обслуживании, которое нужно делать хотя бы раз в год. Мы уверены в том, что ухаживая за кофемашиной системно Вы продлеваете срок эксплуатации и улучшайте качество кофе. Сделать техническое обслуживание очень просто, для этого вы можете обратиться в наш сервисный центр, оставив заявку на сайте или позвонив по прямому номеру телефона.</p>
+
+<div class="tabcontent-bottom"><b>Обратите внимание !</b> Полное техническое обслуживание возможно будет произвести исключительно в мастерской, потому что для этой процедуры нужно иметь весь набор инструментов и запчастей, которые можно держать исключительно на складе. Потому мы и рекомендуем привозить кофейное оборудование к нам.<br />
+<b>Варианты для Вашего удобства:</b>
+
+<p>&nbsp;</p>
 
 <ul>
-	<li>Замена всех уплотнителей</li>
-	<li>Смазка редуктора кофемашины</li>
-	<li>Механическая чистка всех узлов, включая все внутренние</li>
-	<li>Чистка и смазка кофемолки, с заменой щеток</li>
-	<li>Декальцинация</li>
-	<li>Чистка от кофейных масел (детергент)</li>
-	<li>Проверка системы на герметичность</li>
-	<li>Проверка насоса высокого давления на барометр</li>
+	<li>Отремонтировать кофемашину дома. Для этого нужно вызвать нашего выездного мастера, он отремонтирует ее на месте или заберет в мастерскую</li>
+	<li>Отправить свою кофеварку Новой почтой</li>
+	<li>Передать водителем такси</li>
+	<li>Привезти самостоятельно ее в нашу мастерскую кофейного оборудования</li>
 </ul>
+</div>
 </div>
 </div>
 </div>
@@ -2524,7 +2463,7 @@ p.br-service-pref-title {
 	<li>
 	<p class="br-service-pref-title"><img alt="" height="40" loading="lazy" src="/content/uploads/images/pref_4.svg" width="40" /> <span>Квалификация</span></p>
 
-	<p>Специализируемся исключительно на ремонте кофемашин с 2011 года. Более 10 мастеров-профессионалов ежедневно ремонтирует кофемашины любой сложности и всех фирм изготовителей. Профессиональное и современное оборудование для ремонта кофейного оборудование</p>
+	<p>Специализация на ремонте кофемашин с 2011 года. Более 10 мастеров-профессионалов ежедневно ремонтирует кофемашины любой сложности и всех фирм. Профессиональный и современный инструмент для ремонта кофейного оборудования</p>
 	</li>
 	<li>
 	<p class="br-service-pref-title"><img alt="" height="40" loading="lazy" src="/content/uploads/images/pref_5.svg" width="40" /> <span>Гарантия</span></p>
@@ -2563,7 +2502,7 @@ p.br-service-pref-title {
 <div class="br-service__col col-2">
 <h3>Заявка на ремонт</h3>
 
-<form class="br-service__form"><input name="user_name" placeholder="Имя" type="text" /> <input name="user_phone" placeholder="Номер телефона" type="phone" /><input name="user_email" placeholder="E-mail" type="email" /> <label class="br-service__form__checkbox"> Безналичный расчет <input type="checkbox" /> <span class="checkmark">.</span> </label><button class="br-service__button br-service__form-btn">Оставить заявку</button></form>
+<form class="br-service__form"><input name="user_name" placeholder="Имя" type="text" /> <input name="user_phone" placeholder="Номер телефона" type="phone" /><input name="user_email" placeholder="E-mail" type="email" /> <label class="br-service__form__checkbox"> Безналичный расчет <input type="checkbox" /> <span class="checkmark">.</span> </label><button class="br-service__button br-service__form-btn" data-type_request="order">Оставить заявку</button></form>
 </div>
 </div>
 </section>
@@ -2594,7 +2533,7 @@ p.br-service-pref-title {
 </div>
 
 <div class="accordion__content" style="max-height: none;">
-<p>Основной специализацией компании Brayval-Coffee является сертифицированный ремонт кофеварки - кофеварок, как для дома и офиса, так и для кафе, баров и ресторанов. Наша мастерская по ремонту основана в 2011 году в Киеве и за этот период наши мастера отремонтировали тысячи кофеварок разного типа и разных фирм производителей, таких как: Saeco, Philips/Saeco, Bosch, Jura, Siemens, Delonghi, Franke, Krups, WMF, Melitta , Rheavendors, Gaggia, Nivona и другие.</p>
+<p>Ремонт кофемашин это сложный и трудоемкий процесс в котором нужно иметь навык и знание модельного ряда на практике. В нашем арсенале опыта: Saeco, Philips/Saeco, Bosch, Jura, Siemens, Delonghi, Franke, Krups, WMF, Мелитта, Rheavendors, Gaggia, Nivona, BORK, AEG, Kaffit, KRUPS, LAVAZZA, Miele, Nespresso, Schaerer, Smeg, Tassimo, Vitek, Blaser, Ariete, Gorenje, Liberty&#39;s, Dr.Coffee и другие, более 11 лет</p>
 </div>
 </div>
 
@@ -2647,7 +2586,7 @@ p.br-service-pref-title {
 <h3 class="br-service-title">Кто мы такие</h3>
 
 <div class="br-service__item-text">
-<p>Ремонт кофеварок в сервисном центре Brayval-Coffee &ndash; это выгодно, быстро, качественно и недорого. Почему, спросите вы? Дело в том что у нас в наличии огромный выбор запчастей ко всем известным и популярным кофемашинам. значительно сокращает время ремонта. Наш сервисный центр имеет удобное расположение в Голосеевском районе Киева и работает по удобному графику, а также для вас доступна услуга забора и доставки кофеварок в наш сервисный центр. У нас работают только квалифицированные мастера и специалисты своего дела. Мы производим ремонт кофеварок с помощью новейшего, современного и профессионального оборудования. А еще мы любим вкусный кофе и ценим каждого нашего Клиента. Поэтому, если у вас случилась поломка вашего кофейного аппарата, то мы с радостью отремонтируем вашу кофеварку. кратчайшие сроки!</p>
+<p>Brayval-Service &ndash; это сервисный центр по ремонту кофемашин в Киеве. Мы специализируемся исключительно на кофемашинах и проводим профилактику, техническое обслуживание и ремонт кофейного оборудования более 11 лет. Есть большая команда, которая помогает решать любые обращения наших клиентов по кофеваркам любого типа (капсульные, встроенные, автоматические, домашние, офисные, рожковые, суперавтоматы, гейзерные, профессиональные, чалдовые, и другие). Имеем большой склад запчастей, для максимально быстрого ремонта Вашей кофемашины. Имеем регламент на профилактику и на ремонт, поэтому произведем чистку кофемашины изо дня в день. Находимся в удобной локации, поэтому если Вы ищете ремонт кофемашин в Голосеевском районе возле метро, ​​то Вам к нам!</p>
 </div>
 </div>
 </div>
@@ -2901,7 +2840,7 @@ p.br-service-pref-title {
 <div class="br-service__col col-2">
 <h3>Заявка на ремонт</h3>
 
-<form class="br-service__form"><input name="user_name" placeholder="Имя" type="text" /> <input name="user_phone" placeholder="Номер телефона" type="phone" /> <input name="user_email" placeholder="E-mail" type="email" /><label class="br-service__form__checkbox"> Безналичный расчет <input type="checkbox" /> <span class="checkmark">.</span> </label><button class="br-service__button br-service__form-btn">Оставить заявку</button></form>
+<form class="br-service__form"><input name="user_name" placeholder="Имя" type="text" /> <input name="user_phone" placeholder="Номер телефона" type="phone" /> <input name="user_email" placeholder="E-mail" type="email" /><label class="br-service__form__checkbox"> Безналичный расчет <input type="checkbox" /> <span class="checkmark">.</span> </label><button class="br-service__button br-service__form-btn" data-type_request="order">Оставить заявку</button></form>
 </div>
 </div>
 </section>
@@ -2912,7 +2851,7 @@ p.br-service-pref-title {
 
 <h3 class="br-service-title">Как нас найти</h3>
 
-<p>Мы находимся на фасаде ул. Васильковская 15/14 напротив пиццерии &quot;Мамамия&quot;. Чтобы проложить маршрут к нам в сервис кофемашин, нажмите карту &quot;Просмотреть увеличенную карту&quot;. До встречи у нас в мастерской!</p>
+<p>Мы находимся на фасаде ул. Васильковская 15/14 напротив пиццерии &quot;Мамамия&quot;. Чтобы проложить маршрут к нам в сервис кофемашин, нажмите карте&nbsp;&quot;Маршруты&quot;. До встречи у нас в мастерской!</p>
 
 <div class="map-block margin-top-br-service">
 <div class="map-block-col col-1">
@@ -2924,39 +2863,36 @@ p.br-service-pref-title {
 <div class="map-block-col col-2"><iframe allowfullscreen="" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d635.8669482976528!2d30.5001018!3d50.395119!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c8d950ed3c99%3A0x6ebf590d927bbeca!2sBrayval%20Coffee!5e0!3m2!1suk!2sua!4v1717073494389!5m2!1suk!2sua" style="border:0;" width="600"></iframe></div>
 </div>
 </section>
+<!-- Call-back popup -->
 
- <!-- Call-back popup -->
- <div class="brcoff-popup">
-    <div class="brcoff-popup-dialog">
-        <div class="brcoff-popup-content">
-            <div class="brcoff-popup-body">
-                <div class="brcoff-popup__title">
-                    <h2 >Передзвонити вам?</h2>
-                    <div class="brcoff-popup__close">
-                        <span class="brcoff__close-icon">×</span>
-                    </div>
-                </div>
-                <div class="brcoff-popup__form-block">
-                    <p class="brcoff-popup-msg ">Вкажіть номер телефону та ім'я. Ми зв'яжемося з вами найближчим часом.</p>
-                    <form action="" class="brcoff-form">
-                        <input type="text" name="user_name" placeholder="Ім'я">
-                        <input type="tel" name="user_phone" maxlength="13" placeholder="Телефон*">
-                        <button class="br-service__button">Надіслати</button>
-                    </form>
-                </div>
-                <div class="brcoff-form-message">
-                    <p class="brcoff-form-error">Вказаний номер телефону не знайдений. Вкажіть, будь ласка номер який був вказаний при зверненні в сервісний центр, і повторіть запит. Гарного Вам дня!</p>
-                    <p class="brcoff-form-success">Ваша заявка прийнята, майстер звяжеться з Вами найближчім часом</p>
+<div class="brcoff-popup">
+<div class="brcoff-popup-dialog">
+<div class="brcoff-popup-content">
+<div class="brcoff-popup-body">
+<div class="brcoff-popup__title">
+<h2>Перезвонить вам?</h2>
 
-                </div>
-            </div>
-        </div>
-    </div>
+<div class="brcoff-popup__close"><span class="brcoff__close-icon">&times;</span></div>
+</div>
+
+<div class="brcoff-popup__form-block">
+<p class="brcoff-popup-msg ">Укажите номер телефона и имя. Мы свяжемся с вами в ближайшее время.</p>
+
+<form action="" class="brcoff-form"><input name="user_name" placeholder="Имя" type="text" /> <input maxlength="13" name="user_phone" placeholder="Телефон*" type="tel" /><button class="br-service__button br-service__form-btn">Отправить</button></form>
+</div>
+
+<div class="brcoff-form-message">
+<p class="brcoff-form-error">Указанный номер телефона не найден. Укажите, пожалуйста номер, указанный при обращении в сервисный центр, и повторите запрос. Хорошего дня!</p>
+
+<p class="brcoff-form-success">Ваша заявка принята, мастер свяжется с Вами в ближайшее время</p>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </main>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script><script>
-
 
 var swiperOurWorks = new Swiper(".br-service__slider_1", {
     freeMode: true,
@@ -3129,28 +3065,28 @@ document.querySelector('.price-table-btn').addEventListener('click', function(){
 
 if (document.querySelector(".brcoff-popup") !== null) {
 
-window.addEventListener("click", function (e) {
+    window.addEventListener("click", function (e) {
 
-    if(e.target.closest('.call-me__btn')) {
-        e.preventDefault();
-        document.querySelector(".brcoff-popup").classList.add("active");
-        document.body.style.overflow = "hidden";
-    } else {
-        if(e.target.closest('.brcoff-popup__close')) {
+        if(e.target.closest('.call-me__btn')) {
             e.preventDefault();
-            document.querySelector(".brcoff-popup").classList.remove("active");
-            document.body.style.overflow = "auto";
-        }
+            document.querySelector(".brcoff-popup").classList.add("active");
+            document.body.style.overflow = "hidden";
+        } else {
+            if(e.target.closest('.brcoff-popup__close')) {
+                e.preventDefault();
+                document.querySelector(".brcoff-popup").classList.remove("active");
+                document.body.style.overflow = "auto";
+            }
+    
+            if (document.querySelector(".brcoff-popup.active") && !e.target.closest('.brcoff-popup-content')) {
+                document.querySelector(".brcoff-popup").classList.remove("active");
+                document.body.style.overflow = "auto";
+            }
+        }  
+    }); 
 
-        if (document.querySelector(".brcoff-popup.active") && !e.target.closest('.brcoff-popup-content')) {
-            document.querySelector(".brcoff-popup").classList.remove("active");
-            document.body.style.overflow = "auto";
-        }
-    }  
-}); 
-
-};
-
-// popup end
+  };
+  
+  // popup end
 
 </script>
