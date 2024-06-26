@@ -1725,7 +1725,8 @@ p.br-service-pref-title {
 
 /*popup start */
 
-.brcoff-popup {
+.brcoff-popup,
+.brcoff-popup-thanks {
     display: none;
 	position: fixed;
 	top: 0;
@@ -1740,7 +1741,8 @@ p.br-service-pref-title {
 	overflow: hidden;
 }
 
-.brcoff-popup.active {
+.brcoff-popup.active,
+.brcoff-popup-thanks.active {
 	display: block;
 }
 
@@ -1776,7 +1778,13 @@ p.br-service-pref-title {
 	flex: 1 1 auto;
 }
 
-.brcoff-popup h2 {
+.brcoff-popup-thanks .brcoff-popup-body {
+    align-items: flex-start;
+    
+}
+
+.brcoff-popup h2,
+.brcoff-popup-thanks h2 {
 	font-size: 32px;
     font-weight: normal;
 }
